@@ -1,13 +1,7 @@
-// Solicita o nome do herói
 let nome = "Naruto";
-
-// Solicita a quantidade de experiência (XP)
 let experiencia = 5001
-
-// Inicializa a variável que armazenará o nível
 let nivel;
 
-// Classifica o nível do herói com base na experiência
 switch (true) {
     case (experiencia < 1000):
         nivel = "Ferro";
@@ -34,8 +28,7 @@ switch (true) {
         nivel = "Radiante";
         break;
     default:
-        nivel = "Nível desconhecido"; // Caso de proteção, se necessário
+        nivel = "Nível desconhecido";
 }
 
-// Exibe a mensagem final com o nome e nível do herói
 console.log(`O Herói de nome ${nome} está no nível de ${nivel}.`);
