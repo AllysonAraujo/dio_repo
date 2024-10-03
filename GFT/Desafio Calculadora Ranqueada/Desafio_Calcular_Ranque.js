@@ -1,11 +1,8 @@
 function calcularRanque(vitorias, derrotas) {
-    // Calcula o saldo de vitórias
-    const saldoVitorias = vitorias - derrotas;
-
-    // Variável para armazenar o nível
+   
+    const saldoVitorias = vitorias - derrotas;   
     let nivel;
-
-    // Estrutura de decisão switch case para determinar o nível
+    
     switch (true) {
         case (vitorias < 10):
             nivel = "Ferro";
@@ -29,13 +26,11 @@ function calcularRanque(vitorias, derrotas) {
             nivel = "Imortal";
             break;
         default:
-            nivel = "Desconhecido"; // Para garantir que sempre haja um nível
+            nivel = "Desconhecido";
     }
-
-    // Retorna a mensagem final
+    
     return `O Herói tem de saldo de ${saldoVitorias} e está no nível de ${nivel}`;
 }
 
-// Exemplo de uso
 const resultado = calcularRanque(85, 10);
 console.log(resultado);
